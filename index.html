@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="schermata-iniziale" class="schermata">
+            <h1 class="titolo-gioco">SNAKE PRO</h1>
+            <div class="punteggio-massimo">Record: <span id="punteggio-massimo">0</span></div>
+            <button id="bottone-gioca" class="bottone animazione-pulsante">
+                <i class="fas fa-play"></i> GIOCA
+            </button>
+        </div>
+
+        <div id="schermata-gioco" class="schermata nascosta">
+            <div class="info-gioco">
+                <span>PUNTI: <span id="punteggio">0</span></span>
+                <span>MELE: <span id="conteggio-mele">0</span></span>
+            </div>
+            <canvas id="canvas-gioco"></canvas>
+            <div class="controlli">
+                <button id="bottone-home" class="bottone">
+                    <i class="fas fa-home"></i> MENU
+                </button>
+            </div>
+        </div>
+
+        <div id="schermata-game-over" class="schermata nascosta">
+            <h1><i class="fas fa-skull"></i> GAME OVER</h1>
+            <div class="punteggio">PUNTI: <span id="punteggio-finale">0</span></div>
+            <div class="punteggio-massimo">Record: <span id="punteggio-massimo-finale">0</span></div>
+            <div class="controlli">
+                <button id="bottone-riprova" class="bottone">
+                    <i class="fas fa-redo"></i> RIPROVA
+                </button>
+                <button id="bottone-menu" class="bottone">
+                    <i class="fas fa-home"></i> MENU
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
